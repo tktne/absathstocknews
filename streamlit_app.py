@@ -9,7 +9,7 @@ model_name = "tinkerbell7997/test_model_attention_mask_V2"
 # ใช้ st.spinner เพื่อแสดงสถานะระหว่างการโหลดโมเดล
 with st.spinner("กำลังโหลดโมเดล..."):
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name, trust_remote_code=True)
-    tokenizer = AutoTokenizer.from_pretrained(model_name,use_fast=False, trust_remote_code=False)
+    tokenizer = AutoTokenizer.from_pretrained(model_name,use_fast=False, trust_remote_code=True)
 
 st.success("โหลดโมเดลและ tokenizer สำเร็จ!")
 
