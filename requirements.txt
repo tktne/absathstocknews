@@ -2,3 +2,6 @@ streamlit
 pandas
 transformers
 torch
+sentencepiece
+sacremoses
+
