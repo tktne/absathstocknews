@@ -27,5 +27,4 @@ Visit http://localhost:8501 in your browser.
    ```
 
 :tada: Acknowledgments
-
 This project is based on a Streamlit template and has been customized for Aspect-Based Sentiment Analysis (ABSA) of Thai stock news.
