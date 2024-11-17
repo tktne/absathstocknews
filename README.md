@@ -23,8 +23,8 @@ This app helps identify key aspects of stock news to support more informed inves
 3. Open the app :globe_with_meridians:
 
    ```
-Visit http://localhost:8501 in your browser.
+   Visit http://localhost:8501 in your browser.
    ```
 
-:tada: Acknowledgments
+### :tada: Acknowledgments
 This project is based on a Streamlit template and has been customized for Aspect-Based Sentiment Analysis (ABSA) of Thai stock news.
