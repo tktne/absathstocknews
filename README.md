@@ -1,8 +1,10 @@
-# :earth_americas: GDP dashboard template
+:bar_chart: Aspect-Based Sentiment Analysis (ABSA) of Thai Stock News
 
-A simple Streamlit app showing the GDP of different countries in the world.
+A :rocket: Streamlit app for analyzing symbols, aspects, opinions, and sentiments in Thai stock news topics.
+This app helps identify key aspects of stock news to support more informed investment decisions. :chart_with_upwards_trend: :bulb:
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gdp-dashboard-template.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]
+(https://absathstock2024.streamlit.app/)
 
 ### How to run it on your own machine
 
@@ -17,3 +19,11 @@ A simple Streamlit app showing the GDP of different countries in the world.
    ```
    $ streamlit run streamlit_app.py
    ```
+3.Open the app :globe_with_meridians:
+
+   ```
+Visit http://localhost:8501 in your browser.
+   ```
+
+:tada: Acknowledgments
+This project is based on a Streamlit template and has been customized for Aspect-Based Sentiment Analysis (ABSA) of Thai stock news.
