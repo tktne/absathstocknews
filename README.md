@@ -20,7 +20,7 @@ This app helps identify key aspects of stock news to support more informed inves
    $ streamlit run streamlit_app.py
    ```
    
-3.Open the app :globe_with_meridians:
+3. Open the app :globe_with_meridians:
 
    ```
 Visit http://localhost:8501 in your browser.
