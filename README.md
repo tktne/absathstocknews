@@ -1,10 +1,10 @@
-:bar_chart: Aspect-Based Sentiment Analysis (ABSA) of Thai Stock News
+**:bar_chart: Aspect-Based Sentiment Analysis (ABSA) of Thai Stock News**
 
 A :rocket: Streamlit app for analyzing symbols, aspects, opinions, and sentiments in Thai stock news topics.
 This app helps identify key aspects of stock news to support more informed investment decisions. :chart_with_upwards_trend: :bulb:
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]
-(https://absathstock2024.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://absathstock2024.streamlit.app/)
+
 
 ### How to run it on your own machine
 
