@@ -1,7 +1,7 @@
 import streamlit as st
 import transformers
 import torch
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 import re
 
