@@ -4,4 +4,4 @@ transformers
 torch
 sentencepiece
 sacremoses
-
+safetensors
