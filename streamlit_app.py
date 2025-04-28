@@ -8,8 +8,9 @@ import re
 # กำหนดชื่อโมเดล
 model_name = "tinkerbell7997/test_model_attention_mask_V2"
 
-# ใช้ st.spinner เพื่อแสดงสถานะระหว่างการโหลดโมเดล
-with st.spinner("กำลังโหลดโมเดล..."):
+# ใช้ st.cache_resource เพื่อแคชโมเดลและ tokenizer
+@st.cache_resource
+def load_model():
     model = AutoModelForSeq2SeqLM.from_pretrained(
         model_name, 
         trust_remote_code=True,
@@ -21,13 +22,13 @@ with st.spinner("กำลังโหลดโมเดล..."):
         use_fast=False, 
         trust_remote_code=True
     )
+    return model, tokenizer
 
-st.success("โหลดโมเดลและ tokenizer สำเร็จ!")
+# โหลดโมเดลและ tokenizer
+model, tokenizer = load_model()
 
 # กำหนดอุปกรณ์ (CPU หรือ GPU) เผื่อใช้กับ input_ids
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-
 
 # Precompile the regex pattern for symbol detection
 symbol_pattern = re.compile(r'\b[A-Z]{2,}\b')
