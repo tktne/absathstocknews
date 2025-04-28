@@ -1,7 +1,7 @@
 import streamlit as st
 import transformers
 import torch
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 import re
 
@@ -10,14 +10,22 @@ model_name = "tinkerbell7997/test_model_attention_mask_V2"
 
 # ใช้ st.spinner เพื่อแสดงสถานะระหว่างการโหลดโมเดล
 with st.spinner("กำลังโหลดโมเดล..."):
-    model = AutoModelForSeq2SeqLM.from_pretrained(model_name, trust_remote_code=True)
-    tokenizer = AutoTokenizer.from_pretrained(model_name,use_fast=False, trust_remote_code=True)
+    model = AutoModelForSeq2SeqLM.from_pretrained(
+        model_name, 
+        trust_remote_code=True,
+        device_map="auto", 
+        low_cpu_mem_usage=True
+    )
+    tokenizer = AutoTokenizer.from_pretrained(
+        model_name, 
+        use_fast=False, 
+        trust_remote_code=True
+    )
 
 st.success("โหลดโมเดลและ tokenizer สำเร็จ!")
 
-# กำหนดอุปกรณ์ (CPU หรือ GPU)
+# กำหนดอุปกรณ์ (CPU หรือ GPU) เผื่อใช้กับ input_ids
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model.to(device)
 
 
 
