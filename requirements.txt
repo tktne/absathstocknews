@@ -5,3 +5,4 @@ torch
 sentencepiece
 sacremoses
 safetensors
+accelerate
